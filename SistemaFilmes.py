@@ -177,8 +177,6 @@ def remover_favorito(id_filme):
     if filme_removido is not None:
         print(f"\nFilme removido dos favoritos ({tipo_removido}):")
         mostrar_detalhes(filme_removido)
-
-        # ✅ CORRIGIDO: chamada com 1 argumento
         adicionar_ao_historico(filme_removido)
         cores("O filme foi adicionado ao histórico como assistido.", "warning")
     else:
